@@ -1,0 +1,22 @@
+* {
+    @if $debug-mode {
+        outline: 1px solid red;
+    }
+}
+
+html {
+    box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html * {
+    font-family: $roboto-font;
+}
+
+body {
+    overflow-x: hidden;
+}
