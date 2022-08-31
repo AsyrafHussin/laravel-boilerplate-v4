@@ -3,7 +3,8 @@
     "scripts": {
         "dev": "vite",
         "build": "vite build",
-        "pint": "vendor/bin/pint"
+        "pint": "vendor/bin/pint",
+        "prepare": "husky install"
     },
     "devDependencies": {
         "axios": "^0.27",
