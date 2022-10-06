@@ -2,6 +2,7 @@
 
 namespace Database\Factories;
 
+use App\Models\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 
@@ -36,5 +37,39 @@ class UserFactory extends Factory
         return $this->state(fn (array $attributes) => [
             'email_verified_at' => null,
         ]);
+    }
+
+    /**
+     * Define admin default state.
+     *
+     * @return array
+     */
+    public function admin()
+    {
+        return $this
+            ->state([
+                'name' => 'admin',
+                'email' => 'admin@domain.com',
+                'password' => bcrypt('admin123'),
+            ])->afterCreating(function (User $user) {
+                $user->assign('admin');
+            });
+    }
+
+    /**
+     * Define user default state.
+     *
+     * @return array
+     */
+    public function user()
+    {
+        return $this
+            ->state([
+                'name' => 'user',
+                'email' => 'user@domain.com',
+                'password' => bcrypt('user123'),
+            ])->afterCreating(function (User $user) {
+                $user->assign('user');
+            });
     }
 }
