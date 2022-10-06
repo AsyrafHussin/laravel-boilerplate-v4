@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e2ee5524ee79fd7fcb6a5997bf240baf",
+    "content-hash": "c438ecfc4c69e84ca8ec42545efd5a26",
     "packages": [
         {
             "name": "brick/math",
@@ -2689,6 +2689,63 @@
                 "source": "https://github.com/bobthecow/psysh/tree/v0.11.8"
             },
             "time": "2022-07-28T14:25:11+00:00"
+        },
+        {
+            "name": "pyaesone17/active-state",
+            "version": "v1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pyaesone17/active-state.git",
+                "reference": "4ebeef35fe0d533e63b63de2c4774635b2783877"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pyaesone17/active-state/zipball/4ebeef35fe0d533e63b63de2c4774635b2783877",
+                "reference": "4ebeef35fe0d533e63b63de2c4774635b2783877",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Pyaesone17\\ActiveState\\ActiveStateServiceProvider"
+                    ],
+                    "aliases": {
+                        "Active": "Pyaesone17\\ActiveState\\ActiveFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "files": [
+                    "src/helpers.php"
+                ],
+                "psr-4": {
+                    "Pyaesone17\\ActiveState\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Pyae Sone Nyein",
+                    "email": "promise286@gmail.com"
+                }
+            ],
+            "description": "Active State Checker For Laravel Url",
+            "homepage": "https://github.com/pyaesone17/active-state",
+            "keywords": [
+                "dynamic url",
+                "laravel",
+                "request",
+                "url checker"
+            ],
+            "support": {
+                "issues": "https://github.com/pyaesone17/active-state/issues",
+                "source": "https://github.com/pyaesone17/active-state/tree/master"
+            },
+            "time": "2017-09-29T06:39:41+00:00"
         },
         {
             "name": "ralouphie/getallheaders",
