@@ -8,7 +8,7 @@ if (! function_exists('generateToken')) {
     /**
      * Generate token.based on length.
      *
-     * @param int  $length
+     * @param  int  $length
      * @return string
      */
     function generateToken($length)
@@ -21,8 +21,8 @@ if (! function_exists('saveImg')) {
     /**
      * Save image.to storage.
      *
-     * @param object  $img
-     * @param string  $folder
+     * @param  object  $img
+     * @param  string  $folder
      * @return string
      */
     function saveImg($img, $folder = 'images')
@@ -35,7 +35,7 @@ if (! function_exists('removeImg')) {
     /**
      * Remove image.from storage.
      *
-     * @param string  $img
+     * @param  string  $img
      * @return void
      */
     function removeImg($img)
@@ -51,8 +51,8 @@ if (! function_exists('removeAndSaveNewImg')) {
     /**
      * Remove image from storage and save new image to storage.
      *
-     * @param string  $removeImg
-     * @param string  $saveImg
+     * @param  string  $removeImg
+     * @param  string  $saveImg
      * @return string
      */
     function removeAndSaveNewImg($removeImg, $saveImg)
@@ -69,7 +69,7 @@ if (! function_exists('checkRole')) {
     /**
      * Validate user's role.
      *
-     * @param string  $role
+     * @param  string  $role
      * @return bool
      */
     function checkRole($role)
@@ -82,9 +82,9 @@ if (! function_exists('customPaginate')) {
     /**
      * Custom paginate for collection.
      *
-     * @param mixed  $items
-     * @param int  $perpage
-     * @param string|null  $path
+     * @param  mixed  $items
+     * @param  int  $perpage
+     * @param  string|null  $path
      * @param  int|null  $currentPage
      * @return Illuminate\Pagination\LengthAwarePaginator
      */
@@ -95,7 +95,7 @@ if (! function_exists('customPaginate')) {
         $items = $items instanceof Collection ? $items : Collection::make($items);
 
         return new LengthAwarePaginator($items->forPage($page, $perPage), $items->count(), $perPage, $currentPage, [
-            'path'     => $path,
+            'path' => $path,
             'pageName' => 'page',
         ]);
     }
