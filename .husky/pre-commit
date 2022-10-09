@@ -3,4 +3,4 @@
 
 npm run pint
 
-echo '✅ Check and fixed code style'
+echo '✅ Check and fix code style'
