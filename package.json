@@ -3,7 +3,7 @@
     "scripts": {
         "dev": "vite",
         "build": "vite build",
-        "pint": "vendor/bin/pint",
+        "pint": "vendor/bin/pint && git add -A .",
         "prepare": "husky install"
     },
     "devDependencies": {
