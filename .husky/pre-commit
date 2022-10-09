@@ -3,4 +3,4 @@
 
 npm run pint
 
-echo '✅ Passes Laravel Pint'
+echo '✅ Check and fixed code style'
