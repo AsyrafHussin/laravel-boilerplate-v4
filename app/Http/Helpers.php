@@ -83,7 +83,7 @@ if (! function_exists('customPaginate')) {
      * Custom paginate for collection.
      *
      * @param  mixed  $items
-     * @param  int  $perpage
+     * @param  int  $perPage
      * @param  string|null  $path
      * @param  int|null  $currentPage
      * @return Illuminate\Pagination\LengthAwarePaginator
@@ -91,7 +91,7 @@ if (! function_exists('customPaginate')) {
     function customPaginate($items, $perPage = 20, $path = null, $currentPage = null)
     {
         $path = $path ? $path : Paginator::resolveCurrentPage();
-        $page = $currentPage ?: (Paginator::resolveCurrentPage() ?: 1);
+        $page = $currentPage ? $currentPage : (Paginator::resolveCurrentPage() ?: 1);
         $items = $items instanceof Collection ? $items : Collection::make($items);
 
         return new LengthAwarePaginator($items->forPage($page, $perPage), $items->count(), $perPage, $currentPage, [
