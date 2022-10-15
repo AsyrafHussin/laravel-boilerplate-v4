@@ -15,3 +15,8 @@ parameters:
         - node_modules/
         - vendor/
     checkMissingIterableValueType: false
+    ignoreErrors:
+        - message: '#^Undefined variable: \$this$#'
+          paths:
+              - tests/*
+              - routes/*
