@@ -4,13 +4,14 @@ includes:
 parameters:
     paths:
         - app/
-
-    # Level 9 is the highest level
-    level: 5
-#    ignoreErrors:
-#        - '#PHPDoc tag @var#'
-#
-#    excludePaths:
-#        - ./*/*/FileToBeExcluded.php
-#
-#    checkMissingIterableValueType: false
+        - config/
+        - database/
+        - resources/
+        - routes/
+        - tests/
+    level: 4
+    excludePaths:
+        - .github/
+        - node_modules/
+        - vendor/
+    checkMissingIterableValueType: false
