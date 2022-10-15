@@ -9,7 +9,7 @@ parameters:
         - resources/
         - routes/
         - tests/
-    level: 4
+    level: 5
     excludePaths:
         - .github/
         - node_modules/
