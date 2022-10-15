@@ -5,7 +5,7 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 /**
- * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Model>
+ * @extends \Illuminate\Database\Eloquent\Factories\Factory<\App\Models\Role>
  */
 class RoleFactory extends Factory
 {
@@ -24,11 +24,11 @@ class RoleFactory extends Factory
     /**
      * Define the admin default state.
      *
-     * @return array
+     * @return static
      */
     public function admin()
     {
-        return $this->state([
+        return $this->state(fn (array $attributes) => [
             'name' => 'admin',
             'title' => 'admin',
         ]);
@@ -37,11 +37,11 @@ class RoleFactory extends Factory
     /**
      * Define the user default state.
      *
-     * @return array
+     * @return static
      */
     public function user()
     {
-        return $this->state([
+        return $this->state(fn (array $attributes) => [
             'name' => 'user',
             'title' => 'user',
         ]);
