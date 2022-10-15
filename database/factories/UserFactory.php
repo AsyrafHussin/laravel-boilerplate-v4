@@ -42,34 +42,32 @@ class UserFactory extends Factory
     /**
      * Define admin default state.
      *
-     * @return array
+     * @return static
      */
     public function admin()
     {
-        return $this
-            ->state([
-                'name' => 'admin',
-                'email' => 'admin@domain.com',
-                'password' => bcrypt('admin123'),
-            ])->afterCreating(function (User $user) {
-                $user->assign('admin');
-            });
+        return $this->state(fn (array $attributes) => [
+            'name' => 'admin',
+            'email' => 'admin@domain.com',
+            'password' => bcrypt('admin123'),
+        ])->afterCreating(function (User $user) {
+            $user->assign('admin');
+        });
     }
 
     /**
      * Define user default state.
      *
-     * @return array
+     * @return static
      */
     public function user()
     {
-        return $this
-            ->state([
-                'name' => 'user',
-                'email' => 'user@domain.com',
-                'password' => bcrypt('user123'),
-            ])->afterCreating(function (User $user) {
-                $user->assign('user');
-            });
+        return $this->state(fn (array $attributes) => [
+            'name' => 'user',
+            'email' => 'user@domain.com',
+            'password' => bcrypt('user123'),
+        ])->afterCreating(function (User $user) {
+            $user->assign('user');
+        });
     }
 }
