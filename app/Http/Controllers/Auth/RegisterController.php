@@ -21,7 +21,7 @@ class RegisterController extends Controller
     /**
      * Handle user registration.
      *
-     * @param  App\Http\Requests\RegisterRequest  $request
+     * @param  \App\Http\Requests\RegisterRequest  $request
      * @return \Illuminate\Http\RedirectResponse
      */
     public function save(RegisterRequest $request)

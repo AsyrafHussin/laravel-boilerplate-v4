@@ -20,8 +20,8 @@ class LoginController extends Controller
     /**
      * Handle a login request to the application.
      *
-     * @param  App\Http\Requests\LoginRequest  $request
-     * @return Illuminate\Http\RedirectResponse
+     * @param  \App\Http\Requests\LoginRequest  $request
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function auth(LoginRequest $request)
     {
@@ -48,7 +48,7 @@ class LoginController extends Controller
     /**
      * Log the user out of the application.
      *
-     * @return Illuminate\Http\RedirectResponse
+     * @return \Illuminate\Http\RedirectResponse
      */
     public function logout()
     {
