@@ -4,3 +4,11 @@ cp .env.example .env
 APP=$(basename $(pwd))
 awk -v app="$APP" '{sub("APP_NAME=Laravel", "APP_NAME="app)}1' .env > .env.temp && mv .env.temp .env
 awk -v app="$APP" '{sub("APP_URL=http://localhost", "APP_URL=http://"app".test")}1' .env > .env.temp && mv .env.temp .env
+php artisan key:generate --ansi
+php artisan config:cache
+php artisan config:clear
+php artisan storage:link
+npm install
+npm run build
+valet link
+rm -rf ./setup
