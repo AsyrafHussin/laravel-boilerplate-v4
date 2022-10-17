@@ -1,0 +1,5 @@
+#!/bin/bash
+
+APP=$(basename $(pwd))
+open "http://${APP}.test"
+npm run dev
