@@ -4,7 +4,7 @@ My Laravel Boilerplate v4
 
 ## Laravel Version
 
-9.34.0
+9.35.1
 
 ## Getting Started
 
