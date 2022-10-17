@@ -4,7 +4,10 @@
         "dev": "vite",
         "build": "vite build",
         "pint": "vendor/bin/pint && git add -A .",
-        "prepare": "husky install"
+        "prepare": "husky install",
+        "cy:run": "cypress run",
+        "cy:open": "cypress open",
+        "cy:headed": "cypress run --headed"
     },
     "devDependencies": {
         "axios": "^1.1",
