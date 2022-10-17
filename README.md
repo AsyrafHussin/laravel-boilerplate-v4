@@ -12,7 +12,7 @@ Here is what you need to be able to run.
 
 - [Node.js](https://nodejs.org/) (Version: >=18)
 - [PHP](https://www.php.net/) (Version: >=8.1)
-- [Laravel Valet](https://laravel.com/docs/9.x/valet)
+- [Laravel Valet](https://laravel.com/docs/9.x/valet) (Version: >= 3.1)
 
 ## Getting Started
 
