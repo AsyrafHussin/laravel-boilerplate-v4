@@ -44,6 +44,3 @@ jobs:
 
       - name: Execute Pest tests
         run: vendor/bin/pest
-
-      - name: Execute Cypress tests
-        run: npm run cy:run
