@@ -1,5 +1,7 @@
 #!/bin/bash
 
+rm -rf ./.git && rm -rf ./README.md
+composer install -vvv
 cp .env.example .env
 APP=$(basename $(pwd))
 awk -v app="$APP" '{sub("APP_NAME=Laravel", "APP_NAME="app)}1' .env > .env.temp && mv .env.temp .env
