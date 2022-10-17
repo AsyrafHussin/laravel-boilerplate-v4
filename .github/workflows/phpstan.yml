@@ -1,4 +1,4 @@
-name: Run PHPStan
+name: PHPStan
 
 on:
   push:
@@ -22,5 +22,5 @@ jobs:
       - name: Install composer dependencies
         uses: ramsey/composer-install@v1
 
-      - name: Run PHPStan
+      - name: Execute PHPStan
         run: ./vendor/bin/phpstan --error-format=github

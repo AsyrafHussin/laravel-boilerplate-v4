@@ -1,4 +1,4 @@
-name: Run Pest
+name: Pest
 
 on:
   push:
@@ -42,5 +42,5 @@ jobs:
       - name: Generate app key
         run: php artisan key:generate
 
-      - name: Execute Pest tests
+      - name: Execute tests
         run: vendor/bin/pest
