@@ -10,8 +10,9 @@ My Laravel Boilerplate v4
 
 Here is what you need to be able to run.
 
-- [Node.js](https://nodejs.org/) (Version: >=18)
 - [PHP](https://www.php.net/) (Version: >=8.1)
+- [Composer](https://getcomposer.org/) (Version >=2.4)
+- [Node.js](https://nodejs.org/) (Version: >=18)
 - [Laravel Valet](https://laravel.com/docs/9.x/valet) (Version: >= 3.1)
 
 ## Getting Started
