@@ -8,17 +8,27 @@ My Laravel Boilerplate v4
 
 ## Getting Started
 
+1.Clone the repo
+
 ```bash
-# Clone the repo
 git clone git@github.com:AsyrafHussin/laravel-boilerplate-v4.git <project-name>
+```
 
-# Navigate to clonned folder
+2.Navigate to clonned folder
+
+```bash
 cd <project-name>
+```
 
-# Run initial setup
+3.Run initial setup
+
+```bash
 ./setup.sh
+```
 
-# Serve the application 
+4.Serve the application
+
+```bash
 ./serve
 ```
 
