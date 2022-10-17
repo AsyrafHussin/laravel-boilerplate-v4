@@ -6,6 +6,14 @@ My Laravel Boilerplate v4
 
 9.35.1
 
+## Prerequisites
+
+Here is what you need to be able to run.
+
+- [Node.js](https://nodejs.org/) (Version: >=18)
+- [PHP](https://www.php.net/) (Version: >=8.1)
+- [Laravel Valet](https://laravel.com/docs/9.x/valet)
+
 ## Getting Started
 
 1. Clone the repo
