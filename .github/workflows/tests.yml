@@ -54,7 +54,13 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: "npm"
+
+      - name: Cache Node dependencies
+        uses: actions/cache@v3
+        with:
+          path: ~/.npm
+          key: npm-${{ hashFiles('package-lock.json') }}
+          restore-keys: npm-
 
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
@@ -79,6 +85,7 @@ jobs:
         run: vendor/bin/pest
 
       - name: Install Node dependencies
+        if: steps.cache.outputs.cache-hit != 'true'
         run: npm ci
 
       - name: Build assets
