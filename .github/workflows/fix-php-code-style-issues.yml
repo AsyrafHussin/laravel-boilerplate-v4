@@ -1,4 +1,4 @@
-name: Laravel Pint
+name: Fix PHP Code Styling
 
 on: [push]
 
