@@ -56,5 +56,7 @@ jobs:
       - name: Build assets
         run: npm run build
 
-      - name: Execute Cypress tests
-        run: npm run cy:run
+      - name: Cypress run
+        uses: cypress-io/github-action@v4
+        with:
+          browser: chrome
