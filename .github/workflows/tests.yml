@@ -86,7 +86,7 @@ jobs:
         run: php artisan key:generate
 
       - name: Run Migration
-        run: php artisan migrate
+        run: php artisan migrate --seed
 
       - name: Execute PHPUnit tests
         run: vendor/bin/pest
