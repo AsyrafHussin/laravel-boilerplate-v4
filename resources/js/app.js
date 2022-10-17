@@ -1,5 +1,6 @@
 // Global Import
-window.jQuery = window.$ = require("jquery");
+import $ from "jquery";
+window.jQuery = window.$ = $;
 import "../sass/app.scss";
 import "boxicons/css/boxicons.min.css";
 import "popper.js";
