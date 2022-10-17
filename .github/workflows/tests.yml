@@ -47,9 +47,6 @@ jobs:
       - name: Generate app key
         run: php artisan key:generate
 
-      - name: Copy environment file for cypress
-        run: cp .env .env.cypress
-
       - name: Execute Pest tests
         run: vendor/bin/pest
 
@@ -60,7 +57,7 @@ jobs:
         run: npm run build
 
       - name: Run Laravel Server
-        run: php artisan serve --env="cypress" > /dev/null 2>&1 &
+        run: php artisan serve > /dev/null 2>&1 &
 
       - name: Cypress run
         uses: cypress-io/github-action@v4
