@@ -1,4 +1,4 @@
-name: Pest
+name: Tests
 
 on:
   push:
@@ -26,6 +26,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
       - name: Setup PHP
         uses: shivammathur/setup-php@v2
         with:
@@ -42,5 +47,14 @@ jobs:
       - name: Generate app key
         run: php artisan key:generate
 
-      - name: Execute tests
+      - name: Execute Pest tests
         run: vendor/bin/pest
+
+      - name: Install Node dependencies
+        run: npm ci
+
+      - name: Build assets
+        run: npm run build
+
+      - name: Execute Cypress tests
+        run: npm run cy:run
