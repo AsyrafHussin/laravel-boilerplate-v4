@@ -21,11 +21,10 @@ jobs:
       DB_PASSWORD: root
       DB_HOST: 127.0.0.1
       DB_PORT: 32574
-      REDIS_PORT: 6379
       BROADCAST_DRIVER: log
-      CACHE_DRIVER: redis
-      QUEUE_CONNECTION: redis
-      SESSION_DRIVER: redis
+      CACHE_DRIVER: file
+      QUEUE_CONNECTION: sync
+      SESSION_DRIVER: file
       MYSQL_ALLOW_EMPTY_PASSWORD: false
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: boilerplate_v4
@@ -39,11 +38,6 @@ jobs:
         ports:
           - 32574:3306
         options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
-      redis:
-        image: redis
-        ports:
-          - 6379/tcp
-        options: --health-cmd="redis-cli ping" --health-interval=10s --health-timeout=5s --health-retries=3
 
     strategy:
       fail-fast: true
