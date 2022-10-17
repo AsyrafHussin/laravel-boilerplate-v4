@@ -1,6 +1,9 @@
 name: Fix PHP Code Styling
 
-on: [push]
+on:
+  push:
+    paths:
+      - "**.php"
 
 jobs:
   php-code-styling:
