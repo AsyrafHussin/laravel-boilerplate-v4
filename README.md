@@ -32,7 +32,7 @@ cd <project-name>
 3. Run initial setup
 
 ```bash
-./setup.sh
+./setup
 ```
 
 4. Serve the application
