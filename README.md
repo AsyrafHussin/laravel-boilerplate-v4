@@ -17,25 +17,25 @@ Here is what you need to be able to run.
 
 ## Getting Started
 
-1. Clone the repo
+1.Clone the repo
 
 ```bash
 git clone git@github.com:AsyrafHussin/laravel-boilerplate-v4.git <project-name>
 ```
 
-2. Navigate to clonned folder
+2.Navigate to clonned folder
 
 ```bash
 cd <project-name>
 ```
 
-3. Run initial setup
+3.Run initial setup
 
 ```bash
 ./setup
 ```
 
-4. Serve the application
+4.Serve the application
 
 ```bash
 ./serve
