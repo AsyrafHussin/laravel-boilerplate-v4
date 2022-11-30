@@ -11,7 +11,7 @@
     },
     "devDependencies": {
         "axios": "^1.2",
-        "bootstrap": "^5.2.2",
+        "bootstrap": "^5.2.3",
         "boxicons": "^2.1.4",
         "cypress": "^11.1.0",
         "husky": "^8.0.2",
