@@ -22,7 +22,7 @@
         "postcss": "^8.4.19",
         "sass": "^1.56.1",
         "sweetalert2": "^11.6.15",
-        "vite": "^3.2.5",
+        "vite": "^4.0.0",
         "vite-plugin-sass-glob-import": "^1.4.0"
     }
 }
