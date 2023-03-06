@@ -14,7 +14,7 @@
         "laravel/framework": "^9.19",
         "laravel/sanctum": "^3.0",
         "laravel/tinker": "^2.7",
-        "opcodesio/log-viewer": "^1.5",
+        "opcodesio/log-viewer": "^2.2",
         "predis/predis": "^2.0",
         "pyaesone17/active-state": "^1.1.1",
         "silber/bouncer": "^1.0",
