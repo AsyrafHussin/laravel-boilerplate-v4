@@ -20,7 +20,7 @@
         "lodash": "^4.17.19",
         "popper.js": "^1.16.1",
         "postcss": "^8.4.19",
-        "sass": "^1.56.1",
+        "sass": "^1.62.1",
         "sweetalert2": "^11.6.15",
         "vite": "^4.1.0",
         "vite-plugin-sass-glob-import": "^2.0.0"
